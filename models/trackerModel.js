@@ -12,7 +12,7 @@ const TransactionSchema = mongoose.Schema(
       type: String,
     },
     datetime: {
-      type: Date,
+      type: String,
     },
   },
   { versionKey: false }

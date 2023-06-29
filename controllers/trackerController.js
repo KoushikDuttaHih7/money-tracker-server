@@ -12,3 +12,8 @@ exports.transaction = async (req, res) => {
 
   res.json(transaction);
 };
+
+exports.getTransactions = async (req, res) => {
+  const transactions = await TransactionModel.find();
+  res.json(transactions);
+};
